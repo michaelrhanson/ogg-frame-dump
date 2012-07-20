@@ -293,8 +293,9 @@ static int queue_page(ogg_page *page){
 
 static void usage(void){
   fprintf(stderr,
-          "Usage: dumpvid <file.ogv> > outfile\n"
+          "Usage: ogg-frame-dump\n"
           "input is read from stdin if no file is passed on the command line\n"
+          "output_frames is created automatically and frames are dumped in .ppm format\n"
           "\n"
   );
 }
