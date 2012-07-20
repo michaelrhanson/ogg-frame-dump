@@ -1,0 +1,4 @@
+LIBRARIES += -ltheora -logg
+
+: foreach *.c |> gcc -Wall -c %f -o %o |> %B.o
+: *.o |> gcc %f $(LIBRARIES) -o %o |> ogg-frame-dump
